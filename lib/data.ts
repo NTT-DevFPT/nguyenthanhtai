@@ -154,9 +154,29 @@ export const projects: ProjectMeta[] = [
 ];
 
 export const navLinkHrefs = [
-    { href: '#about', key: 'about' as const },
-    { href: '#experience', key: 'experience' as const },
-    { href: '#skills', key: 'skills' as const },
-    { href: '#projects', key: 'projects' as const },
-    { href: '#contact', key: 'contact' as const },
+    { href: '/#about', key: 'about' as const },
+    { href: '/#experience', key: 'experience' as const },
+    { href: '/#skills', key: 'skills' as const },
+    { href: '/#projects', key: 'projects' as const },
+    { href: '/blog', key: 'blog' as const },
+    { href: '/#contact', key: 'contact' as const },
+];
+
+export const certificates = [
+    {
+        title: 'Java Testing',
+        file: '/certificates/java_testing.pdf',
+    },
+    {
+        title: 'Object-Oriented Programming in Java',
+        file: '/certificates/oop_in_java.pdf',
+    },
+    {
+        title: 'Project Management',
+        file: '/certificates/project_management.pdf',
+    },
+    {
+        title: 'Software Development Lifecycle',
+        file: '/certificates/sw_dev_lifecyvle.pdf',
+    },
 ];

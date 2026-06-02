@@ -12,6 +12,7 @@ export type Dictionary = {
         experience: string;
         skills: string;
         projects: string;
+        blog: string;
         contact: string;
         hireMe: string;
     };
@@ -97,6 +98,10 @@ export type Dictionary = {
         builtWith: string;
         designed: string;
     };
+    certificates: {
+        title: string;
+        viewFile: string;
+    };
 };
 
 export const translations: Record<Locale, Dictionary> = {
@@ -106,6 +111,7 @@ export const translations: Record<Locale, Dictionary> = {
             experience: 'Experience',
             skills: 'Skills',
             projects: 'Projects',
+            blog: 'Blog',
             contact: 'Contact',
             hireMe: 'Hire me',
         },
@@ -269,6 +275,10 @@ export const translations: Record<Locale, Dictionary> = {
             builtWith: 'Built with',
             designed: 'Designed & developed by NTT',
         },
+        certificates: {
+            title: 'Chứng chỉ',
+            viewFile: 'Xem chứng chỉ',
+        },
     },
 
     en: {
@@ -277,6 +287,7 @@ export const translations: Record<Locale, Dictionary> = {
             experience: 'Experience',
             skills: 'Skills',
             projects: 'Projects',
+            blog: 'Blog',
             contact: 'Contact',
             hireMe: 'Hire me',
         },
@@ -440,6 +451,10 @@ export const translations: Record<Locale, Dictionary> = {
             builtWith: 'Built with',
             designed: 'Designed & developed by NTT',
         },
+        certificates: {
+            title: 'Certificates',
+            viewFile: 'View Certificate',
+        },
     },
 
     ja: {
@@ -448,6 +463,7 @@ export const translations: Record<Locale, Dictionary> = {
             experience: '経歴',
             skills: 'スキル',
             projects: 'プロジェクト',
+            blog: 'ブログ',
             contact: '連絡',
             hireMe: '採用',
         },
@@ -610,6 +626,10 @@ export const translations: Record<Locale, Dictionary> = {
         footer: {
             builtWith: '作成',
             designed: 'NTT による設計と開発',
+        },
+        certificates: {
+            title: '資格',
+            viewFile: '証明書を見る',
         },
     },
 };

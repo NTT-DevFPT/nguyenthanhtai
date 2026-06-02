@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { navLinkHrefs } from '@/lib/data';
+import { navLinkHrefs, personalInfo } from '@/lib/data';
 import { useLanguage } from '@/lib/i18n/context';
 import LanguageToggle from './LanguageToggle';
 
@@ -30,7 +30,7 @@ export default function Navbar() {
         >
             <div className="container-x flex items-center justify-between gap-4">
                 <a
-                    href="#home"
+                    href="/#home"
                     className="font-mono font-bold text-lg tracking-wide hover:text-accent transition-colors"
                 >
                     <span className="text-accent">&lt;</span>NTT<span className="text-accent">/&gt;</span>
@@ -59,7 +59,14 @@ export default function Navbar() {
                 <div className="hidden md:flex items-center gap-3">
                     <LanguageToggle />
                     <a
-                        href="#contact"
+                        href={personalInfo.cv}
+                        download
+                        className="inline-flex font-mono text-xs px-4 py-2 bg-accent/10 text-accent rounded-md hover:bg-accent/20 transition-all"
+                    >
+                        {t.hero.ctaCV}
+                    </a>
+                    <a
+                        href="/#contact"
                         className="inline-flex font-mono text-xs px-4 py-2 border border-accent text-accent rounded-md hover:bg-accent/10 transition-all"
                     >
                         {t.nav.hireMe}
