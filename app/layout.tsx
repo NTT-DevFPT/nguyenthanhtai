@@ -29,20 +29,11 @@ export const metadata: Metadata = {
         description: 'Backend Developer chuyên Java & Spring Boot.',
         type: 'website',
         locale: 'vi_VN',
-        images: [
-            {
-                url: '/og-image.png',
-                width: 1200,
-                height: 630,
-                alt: 'Nguyễn Thành Tài Portfolio',
-            },
-        ],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Nguyễn Thành Tài — Backend Developer',
         description: 'Backend Developer chuyên Java & Spring Boot.',
-        images: ['/og-image.png'],
     },
 };
 
